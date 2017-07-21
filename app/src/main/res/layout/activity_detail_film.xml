@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.erlangga.finalproject.DetailFilm">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="208dp"
+        android:id="@+id/film_pic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/film_pic"
+        android:layout_toEndOf="@+id/film_pic"
+        android:layout_alignBottom="@+id/film_pic"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large"
+            android:id="@+id/txt_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium"
+            android:id="@+id/txt_2"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fav"
+            android:id="@+id/fav"
+            style="?android:attr/buttonStyleSmall"
+            android:clickable="true"
+            android:background="@drawable/ic_star_511"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Watch Trailer"
+            android:id="@+id/trailer"
+            style="?android:attr/buttonStyleSmall"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/film_pic"
+        android:layout_marginTop="40dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="medium"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/sinopsis"/>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

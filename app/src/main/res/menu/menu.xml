@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_highrate"
+        android:orderInCategory="100"
+        android:title="Top Rate"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_popular"
+        android:orderInCategory="100"
+        android:title="Popular"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_favorite"
+        android:orderInCategory="100"
+        android:title="Favorit"
+        app:showAsAction="never"/>
+
+</menu>
